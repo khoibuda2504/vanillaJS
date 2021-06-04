@@ -1,0 +1,59 @@
+<!DOCTYPE html lang="vi-VN">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1> 
+		Calculator <br>
+		Written by Dang Khoi
+	</h1>
+<div id="wrapper"> 
+	
+	<div id="appCalculator">
+		
+		<input id="result" disabled type="text" value="0">
+
+		<div class="grid-container">
+ 
+			<button id="clearAll">C</button>
+       			<button class="operator">+/-</button>
+       			<button class="operator">%</button>
+        		<button class="operator">/</button>
+       			<button class="number">7</button>
+        		<button class="number">8</button>
+       			<button class="number">9</button>
+        		<button class="operator">*</button>
+        		<button class="number">4</button>
+        		<button class="number">5</button>
+        		<button class="number">6</button>
+        		<button class="operator">-</button>
+        		<button class="number">1</button>
+        		<button class="number">2</button>
+        		<button class="number">3</button>
+        		<button class="operator">+</button>
+        		<button class="number" id="wide">0</button>
+      			<button class="number">.</button>
+       			<button id="equals" class="operator">=</button>
+
+		</div>
+
+	</div>
+
+</div>
+<script>
+window.onload = function() {
+	var element = document.createElement("script");
+	element.src = "script.js";
+	document.body.appendChild(element);
+};
+</script>
+</body>
